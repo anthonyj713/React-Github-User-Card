@@ -3,6 +3,7 @@ import axios from 'axios';
 import './App.css';
 import UserCard from './components/UserCard';
 import FollowersCard from './components/FollowersCard';
+import './components/styles.scss';
 
 
 class App extends React.Component {

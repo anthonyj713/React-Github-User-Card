@@ -7,10 +7,10 @@ import {
   const UserCard = (props) => {
     return (
       <div>
-        <Card>
-          <CardImg top width="20%" src={props.data.avatar_url} alt="Image of person" /> 
+        <Card className='card'>
+          <CardImg className='cardImg' top width="20%" src={props.data.avatar_url} alt="Image of person" /> 
           <CardBody>
-            <CardTitle>{props.data.name}</CardTitle>
+          <CardTitle className='cardTitle'>{props.data.name}</CardTitle>
             <CardSubtitle>{props.data.login}</CardSubtitle>
             <CardText>Followers: {props.data.followers}</CardText>
             <CardText>Following: {props.data.following}</CardText>

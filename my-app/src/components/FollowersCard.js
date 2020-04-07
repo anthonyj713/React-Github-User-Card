@@ -1,20 +1,21 @@
 import React from 'react';
 import {
     Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle
+    CardTitle
   } from 'reactstrap';
 
   const FollowersCard = (props) => {
     return (
-      <div>
-        <Card>
-          <CardImg top width="20%" src={props.data.avatar_url} alt="Image of person" />
-          <CardBody>
-            <CardTitle>{props.data.login}</CardTitle>
-            <CardText>Followers: {props.data.followers_url}</CardText>
-            <CardText>Following: {props.data.following_url}</CardText>
-         </CardBody>
+      <div className='container'>
+        <Card className='card'>
+          <CardImg className='cardImg' top width="20%" src={props.data.avatar_url} alt="Image of person" />
+            <CardBody>
+              <CardTitle className='cardTitle'>{props.data.login}</CardTitle>
+              <CardText>Followers: {props.data.followers_url}</CardText>
+              <CardText>Following: {props.data.following_url}</CardText>
+            </CardBody>
         </Card>
+        
       </div>
     );
   };
